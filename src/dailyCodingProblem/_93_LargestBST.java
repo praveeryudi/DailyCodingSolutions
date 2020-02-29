@@ -35,9 +35,11 @@ public class _93_LargestBST {
 	private static int getMaxBSTSize(Node<Integer> root) {
 		if(null == root)
 			return 0;
+		
 		if(isValidBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE)) {
 			return size(root);
 		}
+		
 		return Math.max(getMaxBSTSize(root.left), getMaxBSTSize(root.right));
 	}
 
