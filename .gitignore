@@ -1,4 +1,7 @@
 bin/
+classes/
+META-INF/
+.idea/
 .settings/
 .classpath
 .project
