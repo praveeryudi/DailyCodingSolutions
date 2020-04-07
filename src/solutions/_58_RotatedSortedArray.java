@@ -1,4 +1,4 @@
-package src.solutions;
+package solutions;
 
 public class _58_RotatedSortedArray {
 
@@ -47,13 +47,13 @@ public class _58_RotatedSortedArray {
 			return mid;
 		
 		if(arr[low] <= arr[mid]) {
-			if(number >= arr[low] && number <= arr[mid])
+			if(number >= arr[low] && number < arr[mid])
 				return findIndex(arr, number, low, mid-1);
 			else
 				return findIndex(arr, number, mid+1, high);
 		}
 		else {
-			if(number >= arr[mid] && number <= arr[high])
+			if(number > arr[mid] && number <= arr[high])
 				return findIndex(arr, number, mid+1, high);
 			else
 				return findIndex(arr, number, low, mid-1);
