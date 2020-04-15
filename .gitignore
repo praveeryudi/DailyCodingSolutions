@@ -1,5 +1,7 @@
 bin/
 classes/
+.metadata/
+
 META-INF/
 .idea/
 .settings/
