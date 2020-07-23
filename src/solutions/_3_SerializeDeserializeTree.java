@@ -4,20 +4,20 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Node {
-	int data;
-	Node left;
-	Node right;
-	
-	public Node(int data) {
-		this.data = data;
-	}
-}
-
 public class _3_SerializeDeserializeTree {
 
+	private static class Node {
+		int data;
+		Node left;
+		Node right;
+
+		Node(int data) {
+			this.data = data;
+		}
+	}
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		_3_SerializeDeserializeTree obj = new _3_SerializeDeserializeTree();
 		// Construct a test tree
 		Node root = new Node(3);

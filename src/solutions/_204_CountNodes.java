@@ -51,12 +51,12 @@ public class _204_CountNodes {
 
     public static void main(String[] args) {
 
-        Node root = new Node(13);
-        root.left = new Node(10);
-        root.right = new Node(14);
+        Node<Integer> root = new Node<>(13);
+        root.left = new Node<>(10);
+        root.right = new Node<>(14);
 
-        root.left.left = new Node(15);
-        root.left.right = new Node(20);
+        root.left.left = new Node<>(15);
+        root.left.right = new Node<>(20);
 
         int c = countNodes(root);
 

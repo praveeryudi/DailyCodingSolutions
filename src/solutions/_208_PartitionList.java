@@ -1,11 +1,11 @@
-package dailyCodingProblem;
+package src.solutions;
 
 public class _208_PartitionList {
 
 	private static class ListNode {
 		int key;
 		ListNode next;
-		public ListNode(int key) {
+		ListNode(int key) {
 			this.key = key;
 		}
 	}
