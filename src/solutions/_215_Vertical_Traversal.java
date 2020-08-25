@@ -56,7 +56,7 @@ public class _215_Vertical_Traversal {
 		TreeCoordinate tc = new TreeCoordinate(x, root.val);
 		if(map.containsKey(x)) {
 			List<TreeCoordinate> res = map.get(x);
-			res.clear();
+			//res.clear();
 			res.add(tc);
 		}
 		else {
