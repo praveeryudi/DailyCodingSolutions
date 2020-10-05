@@ -1,4 +1,4 @@
-package solutions;
+package src.solutions.dailySolutions;
 
 /**
  * Given a multiset of integers, return whether it can be partitioned into two subsets whose sums are the same.
