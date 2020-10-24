@@ -14,8 +14,8 @@ import java.util.Arrays;
 public class _384_Fewest_Coins {
 
     public static void main(String[] args) {
-        int[] coins = {5,8};
-        int amount = 15;
+        int[] coins = {1,2,3};
+        int amount = 10;
         int res = getFewestCoins(coins, amount);
         System.out.println("Fewest Coins :" + res);
     }
