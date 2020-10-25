@@ -10,6 +10,7 @@ public class _112_LCA_Parent_Pointer {
 
         public Node(int data) {
             this.data = data;
+            left = right = null;
         }
 	}
 	
@@ -44,11 +45,9 @@ public class _112_LCA_Parent_Pointer {
 		}
 		return null;
 	}
-	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		Node four = new Node(4);
         Node six = new Node(6);
         createTree(four, six);
