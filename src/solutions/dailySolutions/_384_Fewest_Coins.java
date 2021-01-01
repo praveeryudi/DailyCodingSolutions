@@ -1,4 +1,4 @@
-package solutions.dailySolutions;
+package src.solutions.dailySolutions;
 
 import java.util.Arrays;
 
