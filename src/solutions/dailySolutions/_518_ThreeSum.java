@@ -18,7 +18,7 @@ public class _518_ThreeSum {
         for(int i = 0; i < n - 2; i++) {
             int start = i + 1;
             int end = n - 1;
-            while(start <= end) {
+            while(start < end) {
                 int sum = nums[i] + nums[start] + nums[end];
                 if(sum == k)
                     return true;
@@ -34,8 +34,8 @@ public class _518_ThreeSum {
     }
 
     public static void main(String[] args) {
-        int[] nums = {20, 303, 3, 4, 25};
-        int k = 49;
+        int[] nums = {2,0,1};
+        int k = 2;
         boolean res = isSum(nums, k);
         System.out.println("Is 3 Sum: " + res);
     }
