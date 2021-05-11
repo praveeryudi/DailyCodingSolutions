@@ -1,4 +1,4 @@
-package src.solutions.myOwn;
+package src.solutions.amazon;
 
 /**
  * Given an array of numbers, find the maximum sum of any contiguous subarray of the array.

@@ -1,4 +1,4 @@
-package src.solutions.myOwn;
+package src.solutions.microsoft;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package src.solutions.myOwn;
+package src.solutions.facebook;
 
 /**
  * Given a array of numbers representing the stock prices of a company in chronological order,

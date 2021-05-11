@@ -1,4 +1,4 @@
-package src.solutions.myOwn;
+package src.solutions.google;
 
 public class _31_EditDistance {
 
