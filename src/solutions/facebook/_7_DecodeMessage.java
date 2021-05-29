@@ -18,17 +18,6 @@ public class _7_DecodeMessage {
         System.out.println(res);
     }
 
-    private static int getWays(String data) {
-        if(data.startsWith("0")) return 0;
-        if(data.isEmpty() || data.length() == 1) return 1;
-        int ways = getWays(data.substring(1));
-        String first2Chars = data.substring(0, 2);
-        if(Integer.valueOf(first2Chars) <= 26) {
-            ways += getWays(data.substring(2));
-        }
-        return ways;
-    }
-
     // k denotes the last 'k' characters
     private static int getWays(String data, int k, Map<Integer, Integer> cache) {
 
