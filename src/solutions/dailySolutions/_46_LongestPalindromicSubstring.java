@@ -1,4 +1,4 @@
-package src.solutions.dailySolutions;
+package solutions.dailySolutions;
 
 /**
  * Given a string, find the longest palindromic contiguous substring. If there are more than one with the maximum length,

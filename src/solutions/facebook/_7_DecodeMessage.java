@@ -13,7 +13,7 @@ import java.util.Map;
 public class _7_DecodeMessage {
 
     public static void main(String[] args) {
-        String data = "111111111111111111111111111111111111111111111";
+        String data = "1411511110191111101011871111111111111511374411510811111311124711511116468111611111116111111111117";
         int res = getWays(data, data.length(), new HashMap<>());
         System.out.println(res);
     }

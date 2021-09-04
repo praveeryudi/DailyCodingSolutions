@@ -1,4 +1,4 @@
-package src.solutions.myOwn;
+package solutions.myOwn;
 
 import java.util.Arrays;
 
