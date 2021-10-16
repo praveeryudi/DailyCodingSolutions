@@ -1,4 +1,4 @@
-package src.solutions.dailySolutions;
+package solutions.dailySolutions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +12,7 @@ public class _102_Contiguous_Sum {
 		
 		int start = 0;
 		int end = -1;
-		Map<Integer, Integer> map = new HashMap();
+		Map<Integer, Integer> map = new HashMap<>();
 		int currentSum = 0;
 		for(int index = 0; index < nums.length; index++) {
 			
@@ -33,8 +33,7 @@ public class _102_Contiguous_Sum {
 		if(end == -1)
 			System.out.println("No contiguous element sum found !!");
 		else
-		System.out.println("Sum found between indices = " + start + " and " + end);
-		
+			System.out.println("Sum found between indices = " + start + " and " + end);
 	}
 
 }
