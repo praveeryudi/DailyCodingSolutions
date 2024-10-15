@@ -13,6 +13,7 @@ public class _694_FirstMissingPositive {
 
     public static void main(String[] args) {
         int[] nums = {3,4,-1,1};
+        System.out.println("Input Array: " + Arrays.toString(nums));
         System.out.println(getFirstMissingPositive(nums));
     }
 

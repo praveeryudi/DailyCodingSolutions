@@ -1,4 +1,4 @@
-package src.solutions.myOwn;
+package solutions.myOwn;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,12 +15,10 @@ public class SumEqualToZero {
         int count = 0;
         Map<Integer, Integer> map = new HashMap<>();
         int currSum = 0;
-        for(int i = 1; i < arr.length; i++) {
+        map.put(currSum, 1);
+        for(int i = 0; i < arr.length; i++) {
             currSum += arr[i];
-            if(currSum == k) {
-                count++;
-            }
-            else if(map.containsKey(currSum - k)) {
+            if(map.containsKey(currSum - k)) {
                 count += map.get(currSum - k);
             }
             map.put(currSum, 1 + map.getOrDefault(currSum, 0));

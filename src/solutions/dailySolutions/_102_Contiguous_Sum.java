@@ -18,7 +18,7 @@ public class _102_Contiguous_Sum {
 			
 			currentSum += nums[index];
 			if(currentSum == k) {
-				start = 0;
+				//start = 0;
 				end = index;
 			}
 			

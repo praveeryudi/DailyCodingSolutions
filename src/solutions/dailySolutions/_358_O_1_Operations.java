@@ -77,7 +77,7 @@ public class _358_O_1_Operations<K> {
     }
 
     public static void main(String[] args) {
-        _358_O_1_Operations obj = new _358_O_1_Operations();
+        _358_O_1_Operations<Integer> obj = new _358_O_1_Operations<>();
         obj.plus(11);
         obj.plus(21);
         obj.plus(11);

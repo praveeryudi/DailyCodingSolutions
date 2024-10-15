@@ -15,13 +15,15 @@ public class _37_Subsets {
     private static List<List<Integer>> subsets = new ArrayList<>();
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3};
+        int[] nums = {51, 17945, 27159, 386  };
         helper(nums, 0, new ArrayList<>());
         System.out.println(subsets);
     }
 
     private static void helper(int[] nums, int index, List<Integer> current) {
-        subsets.add(new ArrayList<>(current));
+        if(!current.isEmpty()) {
+            subsets.add(new ArrayList<>(current));
+        }
         if(index >= nums.length)
             return;
         for(int i = index; i < nums.length; i++) {

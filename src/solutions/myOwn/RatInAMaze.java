@@ -1,5 +1,7 @@
 package src.solutions.myOwn;
 
+import java.util.ArrayList;
+
 /**
  * Given a grid of size n*n filled with 0, 1, 2, 3.
  * Check whether there is a path possible from the source to destination.
@@ -67,7 +69,7 @@ public class RatInAMaze {
             return false;
 
         int[][] solArr = new int[rows][cols];
-        boolean isPossible = backtrack(grid, source.x, source.y, destination.x, destination.y, visited, solArr);
+        boolean isPossible = backtrack(grid, "", source.x, source.y, destination.x, destination.y, visited, solArr);
 
         // Print solution array
         for(int r = 0; r < rows; r++) {
@@ -81,13 +83,14 @@ public class RatInAMaze {
         return isPossible;
     }
 
-    private static boolean backtrack(int[][] grid, int sx, int sy, int dx, int dy, boolean[][] visited, int[][] solArr) {
+    private static boolean backtrack(int[][] grid, String ans, int sx, int sy, int dx, int dy, boolean[][] visited, int[][] solArr) {
 
         if(sx == dx && sy == dy)
         {
             numPaths++;
             visited[dx][dy] = true;
             solArr[dx][dy] = 1;
+            System.out.println(ans);
             return true;
         }
 
@@ -95,16 +98,16 @@ public class RatInAMaze {
         if(isSafe(grid, sx, sy) && !visited[sx][sy]) {
             visited[sx][sy] = true;
             solArr[sx][sy] = 1;
-            boolean res = backtrack(grid, sx, sy-1, dx, dy, visited, solArr);
+            boolean res = backtrack(grid, ans + "L", sx, sy-1, dx, dy, visited, solArr);
             if(res) return true;
 
-            res = backtrack(grid, sx-1, sy, dx, dy, visited, solArr);
+            res = backtrack(grid, ans + "U", sx-1, sy, dx, dy, visited, solArr);
             if(res) return true;
 
-            res = backtrack(grid, sx, sy+1, dx, dy, visited, solArr);
+            res = backtrack(grid, ans + "R", sx, sy+1, dx, dy, visited, solArr);
             if(res) return true;
 
-            res = backtrack(grid, sx+1, sy, dx, dy, visited, solArr);
+            res = backtrack(grid, ans + "D",sx+1, sy, dx, dy, visited, solArr);
             if(res) return true;
 
             visited[sx][sy] = false;
@@ -118,5 +121,4 @@ public class RatInAMaze {
             return false;
         return true;
     }
-
 }
